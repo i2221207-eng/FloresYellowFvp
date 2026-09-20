@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Flores Amarillas 🌻</title>
+
+    <link rel="stylesheet"
+        href="style.css">
+</head>
+
+<body>
+<audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<button id="botonSonido" title="Activar música">
+    🔇
+</button>
+
+    <!-- =====================================================
+         FONDO DE ESTRELLAS
+    ====================================================== -->
+
+    <canvas id="canvas"></canvas>
+
+
+
+    <!-- =====================================================
+         PRIMERA ESCENA
+    ====================================================== -->
+
+    <main class="contenedor"
+        id="primeraEscena">
+
+
+        <!-- TÍTULO -->
+
+        <div class="titulo">
+
+            <span>
+                Feliz día de las
+            </span>
+
+            <h1>
+                Flores Amarillas 🌻
+            </h1>
+
+        </div>
+
+
+
+        <!-- =================================================
+             ESCENA CENTRAL
+        ================================================== -->
+
+        <div class="escena-central">
+
+
+            <!-- ÓRBITAS -->
+
+            <div class="anillo anillo1"></div>
+
+            <div class="anillo anillo2"></div>
+
+            <div class="anillo anillo3"></div>
+
+            <div class="anillo anillo4"></div>
+
+
+
+            <!-- PLATAFORMA -->
+
+            <div class="plataforma">
+
+                <div class="energia"></div>
+
+                <div class="nucleo">
+
+                    <div class="nucleo-luz"></div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FLORES FLOTANTES -->
+
+            <div id="floresFlotantes">
+
+
+                <div class="flor-flotante flor-f1">
+
+                    <div class="flor-emoji">
+                        🌻
+                    </div>
+
+                    <span>
+                        Para ti 💛
+                    </span>
+
+                </div>
+
+
+
+                <div class="flor-flotante flor-f2">
+
+                    <div class="flor-emoji">
+                        🌻
+                    </div>
+
+                    <span>
+                        Eres especial
+                    </span>
+
+                </div>
+
+
+
+                <div class="flor-flotante flor-f3">
+
+                    <div class="flor-emoji">
+                        🌻
+                    </div>
+
+                    <span>
+                        Con cariño ✨
+                    </span>
+
+                </div>
+
+
+
+                <div class="flor-flotante flor-f4">
+
+                    <div class="flor-emoji">
+                        🌻
+                    </div>
+
+                    <span>
+                        Para alguien especial
+                    </span>
+
+                </div>
+
+
+
+                <div class="flor-flotante flor-f5">
+
+                    <div class="flor-emoji">
+                        🌻
+                    </div>
+
+                    <span>
+                        Siempre 💛
+                    </span>
+
+                </div>
+
+
+
+                <div class="flor-flotante flor-f6">
+
+                    <div class="flor-emoji">
+                        🌻
+                    </div>
+
+                    <span>
+                        Flores para ti
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- PARTÍCULAS -->
+
+            <canvas id="beamCanvas"></canvas>
+
+
+        </div>
+
+
+
+        <!-- MENSAJE -->
+
+        <p class="mensaje">
+
+            Una pequeña flor para una persona especial 💛
+
+        </p>
+
+
+
+        <!-- BOTÓN -->
+
+        <button id="boton">
+
+            ✨ Continuar
+
+        </button>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         SEGUNDA ESCENA
+    ====================================================== -->
+
+    <section id="segundaEscena">
+
+
+        <!-- CAPA DE PARTÍCULAS -->
+
+        <div id="petalos"></div>
+
+
+
+        <!-- DESTELLOS -->
+
+        <div class="destello destello1"></div>
+
+        <div class="destello destello2"></div>
+
+        <div class="destello destello3"></div>
+
+        <div class="destello destello4"></div>
+
+        <div class="destello destello5"></div>
+
+        <div class="destello destello6"></div>
+
+        <div class="destello destello7"></div>
+
+
+
+        <!-- CONTENIDO -->
+
+        <div class="contenido-dedicatoria">
+
+
+            <!-- FLOR -->
+
+            <div class="flor-grande">
+
+                🌻
+
+            </div>
+
+
+
+            <!-- TÍTULO -->
+
+            <h2>
+
+                Para una persona especial 💛
+
+            </h2>
+
+
+
+            <!-- TEXTO QUE SE ESCRIBE -->
+
+            <div class="zona-escritura">
+
+                <p id="textoEscritura"></p>
+
+                <span id="cursor">
+                    |
+                </span>
+
+            </div>
+
+
+
+            <!-- SEPARADOR -->
+
+            <div id="separador"
+                class="separador">
+
+                ✦ ✦ ✦
+
+            </div>
+
+
+
+            <!-- FRASE FINAL -->
+
+            <p id="fraseFinal"
+                class="frase-final">
+
+                Esta flor es para ti 🌻
+
+            </p>
+
+
+
+            <!-- BOTÓN -->
+
+            <button id="volver">
+
+                ← Volver
+
+            </button>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
